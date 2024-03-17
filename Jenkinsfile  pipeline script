@@ -1,0 +1,14 @@
+node{
+    stage('chekout')
+    {
+    echo "code chekout"
+    }
+   stage('Test')
+    {
+        echo "code Test"
+    }
+    stage('Deploy')
+    {
+        echo "code Deploy"
+    }
+}

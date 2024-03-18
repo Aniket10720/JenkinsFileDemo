@@ -5,8 +5,8 @@ pipeline {
         //disableConcurrentBuild()
     }
     triggers{
-        cron('* * * * *') 
-        pollSCM('* * * * *')
+        cron('H * * * *') 
+        pollSCM('H * * * *')
     }
     parameters{
         string(name:'DEPLOY ENV',defaultValue: 'Dev',description:"")
